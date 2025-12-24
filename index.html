@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/icon-sunny.webp" type="image/x-icon">
+    <title>weather</title>
+</head>
+<body>
+    <!-- <div class="container"> -->
+        <div class="navContainer">
+            <div class="nav">
+                <div class="logo">
+                    <img src="./img/logo.svg" alt="">
+                </div>
+                <div class="unit">
+                    <!-- <img src="./img/icon-search.svg" alt=""> -->
+                    <img src="./img/icon-units.svg" alt="">
+                    <p>unit</p>
+                    <!-- <select name="" id="" class='units' style="color: white;">
+                        <option value="">unit</option>
+                    </select> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="hero-section" id="app">
+                <h2>How's the sky looking today?</h2>
+                <div class="search search-box">
+                    <img src="./img/icon-search.svg" alt="">
+                    <input type="text" name="" id="cityInput" placeholder="search for a place..." autocomplete="on">
+                    <button id="searchBtn" class="btn">search</button>
+                </div>
+                <!-- <div id="weather" class="result"></div> -->
+                <!-- <div id="weather" class="handleError hidden"></div> -->
+                <!-- weather data -->
+                 <main class="weatherContainer">
+                    <section class="leftContainer">
+                        <div class="main-card" style="position: relative;">
+                            <div>
+                                <h1 class="location" id="locationName">Lagos</h1>
+                                <p class="date" id="date"></p>
+                            </div>
+                            <div class="temp">
+                                <span>
+                                    <img src="./img/icon-sunny.webp" alt="">
+                                    <h1>68</h1>
+                                </span>
+                            </div>
+                            <img class="img1" src="./img/icon-sunny.webp" alt="" >
+                            <img class="img2" src="./img/icon-sunny.webp" alt="">
+                        </div>
+                        <!-- <img src="./img/bg-today-small.svg" alt=""> -->
+                        <!-- <img src="./img/bg-today-large.svg" alt=""> -->
+                        <!-- stat -->
+                         <div class="stats">
+                            <div class="stat">Feels like <br> <strong id="feels">69</strong></div>
+                            <div class="stat">Humidity <br> <strong id="humidity">57</strong></div>
+                            <div class="stat" id="wind">Wind <br> <strong>9 mph</strong></div>
+                            <div class="stat" id="precip">Precipitation <br> <strong>0 in</strong></div>
+                         </div>
+                         <!-- hourly -->
+                          <h3>Daily Forcast</h3>
+                          <div class="daily">
+                            <div class="day">
+                                Tue
+                                <img src="./img/icon-rain.webp" alt="">
+                            </div>
+                            <div class="day">Wed
+                                <img src="./img/icon-drizzle.webp" alt="">
+                            </div>
+                            <div class="day">Thu
+                                <img src="./img/icon-sunny.webp" alt="">
+                            </div>
+                            <div class="day">Fri
+                                <img src="./img/icon-partly-cloudy.webp" alt="">
+                                
+                            </div>
+                            <div class="day">Sat
+                                <img src="./img/icon-storm.webp" alt="">
+                            </div>
+                            <div class="day">Sun
+                                <img src="./img/icon-snow.webp" alt="">
+                            </div>
+                            <div class="day">Mon
+                                <img src="./img/icon-fog.webp" alt="">
+
+                            </div>
+                          </div>
+                    </section>
+                    <!-- right data -->
+                     <aside  class="right">
+                        <h4>Hourly Forecast</h4>
+                        <div class="hour">
+                            <div>
+                                <img src="./img/icon-overcast.webp" alt="">
+                                3 PM
+                            </div>
+                            <h5>68</h5>
+                        </div>
+                        <div class="hour">
+                            <div>
+                                <img src="./img/icon-partly-cloudy.webp" alt="">
+                                4 PM
+                            </div>
+                            <h5>68</h5>
+                        </div>
+                        <div class="hour">  
+                            <div>
+                                <img src="./img/icon-sunny.webp" alt="">
+                                5 PM
+                            </div>
+                            <h5>68</h5>
+                        </div>  
+                        <div class="hour">
+                            <div>
+                                <img src="./img/icon-overcast.webp" alt="">
+                                6 PM
+                            </div>
+                            <h5>68</h5>
+                        </div>
+                        <div class="hour">
+                            <div>
+                                <img src="./img/icon-snow.webp" alt="">
+                                7 PM
+                            </div>
+                            <h5>68</h5>
+                        </div>  
+                        <div class="hour">
+                            <div>
+                                <img src="./img/icon-fog.webp" alt="">    
+                                8 PM
+                            </div>
+                            <h5>68</h5>
+                        </div>  
+                        <div class="hour">
+                            <div>
+                                <img src="./img/icon-snow.webp" alt="">
+                                9 PM
+                            </div>
+                            <h5>68</h5>
+                        </div>  
+                        <div class="hour">
+                            <div>
+                                <img src="./img/icon-overcast.webp" alt="">
+                                10 PM
+                            </div>
+                            <h5>68</h5>
+                        </div>
+                     </aside>
+                 </main>
+            </div>
+            <!-- when something goes wrong ERROR-->
+            <div id="errorScreen" class="hidden">
+                <img class="errorIcon" src="./img/icon-error.svg" alt="">
+                <h2>Something went wrong</h2>
+                <p>We couldn't connect to the server (API error). Please try <br> again in a few moments.</p>
+                <button class="btnRetry" onclick="reloadPage()">
+                    <img src="./img/icon-retry.svg" alt="">
+                    Retry</button>
+            </div>
+        </div>
+    <!-- </div> -->
+    <script src="./java.js"></script>
+</body>
+</html>

@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+}
+.navContainer{
+    background-color: hsl(243, 96%, 9%) !important;
+    width: 100%;
+}
+.container{
+    background-color: hsl(243, 96%, 9%) !important;
+}
+.unit{
+     width: 80px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(243, 23%, 30%);
+    border: none;
+    gap: 2px;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.nav{
+    width: 90%;
+    background-color: hsl(243, 96%, 9%);
+    margin: auto;
+    padding: 20px 0px 40px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: fixed;
+    border: 1px solid red;
+    z-index: 1064; */
+}
+.hero-section {
+
+     width: 80%;
+    margin: auto;
+    /* padding-top: 160px; */
+    /* width: 100%; */
+    /* height: 100vh; */
+    /* margin-top: 40px; */
+    /* background-color: hsl(243, 96%, 9%); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+    /* position: relative; */
+    /* border: 1px solid wheat; */
+}
+.search{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.search img{
+    position: absolute;
+    left: 10px;
+}
+.hero-section h2{
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 32px;
+}
+input{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 40px;
+    color: white;
+    background-color:hsl(243, 23%, 24%);
+    cursor: pointer;
+}
+.handleError{
+    background-color:hsl(243, 23%, 24%);
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    padding: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    position: absolute;
+    top: 96px;
+    right: 515px;
+    /* left: -20px; */
+}
+.btn{
+    background-color:hsl(233, 67%, 56%) ;
+    padding: auto;
+    width: 55px;
+    height: 33px;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 7px;
+    border: none;
+}
+/* search dropdown */
+/* .search-box{
+    position: relative;
+}
+.dropdown{
+    border: 1px solid red;
+    position: absolute;
+    top: 150px;
+    left: 0;
+}
+.dropdown li{
+    padding: 10px;
+    cursor: pointer;
+}
+.dropdown li:hover{
+    background-color: hsl(243, 23%, 30%);
+}
+.hidden{
+    display: none;
+} */
+/* Error screen */
+.hidden{
+    display: none !important;
+}
+#errorScreen{
+    height: 100vh;
+    background-color: hsl(243, 96%, 9%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 0px;
+    align-items: center;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    padding-bottom: 300px; /* just to make the background color full*/
+}
+.btnRetry{
+    width: 100px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(243, 23%, 30%);
+    border: none;
+    gap: 5px;
+    border-radius: 5px;
+    font-size: 10px;
+    cursor: pointer;
+}
+.btnRetry img{
+    width: 12px;
+}
+.errorIcon{
+    width: 30px;
+    padding-bottom: 10px;
+}
+#errorScreen h2{
+    padding-bottom: 10px;
+}
+#errorScreen p{
+    padding-bottom: 10px;
+    font-size: 12px;
+    line-height: 20px;
+}
+.weatherContainer{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    
+}
+.main-card{
+    background-image: url(./img/bg-today-small.svg);
+    background-size: cover;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    height: 200px;
+    position: relative;
+}
+.img1{
+    position: absolute; 
+    top: 10px; 
+    width: 40px; 
+    left: 240px;
+}
+.img2{
+    position: absolute; 
+    bottom: 20px; 
+    width: 30px; 
+    left: 120px;
+}
+.location{
+    padding-bottom: 15px;
+}
+.main-card img{
+    width: 120px;
+}
+.temp span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: auto;
+}
+.temp h1{
+    font-size: 30px;
+}
+.stats{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+.stat{
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: hsl(243, 23%, 24%);
+    height: 90px;
+    display: flex;
+    gap: 10px;
+    align-items: self-start;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.daily{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 12px;
+    margin-top: 15px;
+    height: 100px;
+}
+.day{
+    background-color: hsl(243, 23%, 24%);
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.day img, .hour img{
+    width: 30px;
+}
+.right{
+    border-radius:20px ;
+    height: auto; 
+    overflow-y: hidden;
+    background-color: hsl(243, 23%, 24%);
+    padding: 20px;
+}
+.right h4{
+    padding-bottom: 10px;
+}
+.hour{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(243, 23%, 30%);
+    border-radius: 12px;
+    margin-bottom: 7px;
+    padding: 12px;
+}
+.hour div{
+    display: flex;
+    height: 20px;
+    align-items: center;
+}
+.result{
+    width: 200px;
+    border: 1px solid white;
+}
+@media (max-width:768px) {
+    .hero-section{
+        width: 95%;
+        margin: auto;
+        /* border: 1px solid wheat; */
+    }
+    .weatherContainer{
+        grid-template-columns: 1fr;
+        /* grid-template-rows: 100px 100px 100px; */
+        /* border: 1px solid red; */
+        width: 100%;
+        margin: auto;
+    }
+    .leftContainer{
+        /* border: 1px solid yellow; */
+        width: 100%;
+    }
+    .main-card{
+        /* padding: 0px; */
+        width: 100%;
+        /* border: 1px solid green; */
+        /* justify-content: center; */
+    }
+    .stats{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .daily{
+        display: flex;
+        flex-wrap: wrap;
+        height: 370px;
+        width: 300px;
+        justify-content: center;
+        
+    }
+    .daily .day{
+        width: 30%;
+        flex: 0 0 calc(33.33% -10px);
+        box-sizing: border-box;
+    }
+    .img1, .img2{
+        position: unset;
+        display: none;
+    }
+    .right{
+        margin-top: 10x;
+        order: 2;
+    }
+}
