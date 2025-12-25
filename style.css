@@ -192,14 +192,14 @@ input{
 .img1{
     position: absolute; 
     top: 10px; 
-    width: 40px; 
+    width: 40px !important; 
     left: 240px;
 }
 .img2{
+    width: 40px !important;
     position: absolute; 
     bottom: 20px; 
-    width: 30px; 
-    left: 120px;
+    left: 150px;
 }
 .location{
     padding-bottom: 15px;
@@ -285,8 +285,27 @@ input{
     .hero-section{
         width: 95%;
         margin: auto;
-        /* border: 1px solid wheat; */
     }
+    .hero-section h2{
+    padding-bottom: 10px;
+    width: 250px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 27px;
+}
+    .search{
+        flex-direction: column;
+        width: 95%;
+        margin: auto;
+    }
+    .btn{
+        width: 300px;
+    }
+    .search img{
+    top: 6px;
+    left: 35px;
+    }
+
     .weatherContainer{
         grid-template-columns: 1fr;
         /* grid-template-rows: 100px 100px 100px; */
